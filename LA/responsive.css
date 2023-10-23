@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* .container {} */
+
+img {
+	width: 100%;
+}
+
+nav {
+	float: left;
+	width: 20%;
+	height: inherit;
+}
+
+.main {
+	float: left;
+	width: 60%;
+}
+
+aside {
+	float: left;
+	width: 20%;
+}
+footer {
+	clear: both;
+	width: 100%;
+}
+
+@media only screen and (max-width:800px) {
+
+	/* For tablets: */
+	.main {
+		width: 80%;
+		padding: 0;
+	}
+
+	aside {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:500px) {
+
+	/* For mobile phones: */
+	nav,
+	.main,
+	aside {
+		width: 100%;
+	}
+}
