@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+.main {
+  background-color: grey;
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #000;
+  -webkit-box-shadow: 8px 8px 24px 0 #42445aff;
+  -moz-box-shadow: 8px 8px 24px 0 #42445aff;
+  box-shadow: 8px 8px 24px 0 #42445aff;
+}
+
+.title {
+  padding: 5px;
+}
+
+#search-bar {
+  margin: auto;
+  background-color: #fff;
+  padding: 10px 10px 10px 40px;
+  border-radius: 5px;
+  width: 50%;
+  border: 1px solid #555;
+  display: block;
+  background: #fff
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+}
+
+.searchButton {
+  display: none;
+}
+
+#tasks {
+  background-color: #fff;
+  padding: 2px 0;
+  margin: 10px;
+  width: 900px;
+  border-radius: 5px;
+}
+
+.task {
+  background-color: #fff;
+  padding: 5px 0 5px 5px;
+  align-items: center;
+  border-bottom: 2px dotted darkgrey;
+  cursor: pointer;
+  list-style-type: none;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.delete {
+  background-color: red;
+  float: right;
+}
+
+.task button {
+  color: #fff;
+  padding: 3px;
+  width: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#taskName {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-left: 5px;
+  margin: auto 0;
+}
+
+#taskDate {
+  width: 40%;
+  float: left;
+}
+
+.inputArea {
+  padding: 20px;
+  text-align: right;
+}
+
+#newTaskInput,
+#newTaskDate {
+  background-color: #fff;
+  padding: 10px 6px;
+  border-radius: 5px;
+}
+
+#newTaskInput:focus,
+#clearBtn:focus,
+#newTaskDate:focus {
+  outline: none;
+  border-color: #a9a9a9;
+}
+
+#addBtn,
+#clearBtn {
+  background-color: green;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 6px;
+  box-shadow: 0 5px 29px #01183026;
+  outline: none;
+  border-color: #01183026;
+  font-weight: 700;
+  color: #fff;
+}
+
+#clearBtn {
+  background-color: red;
+}
+.highlight {
+  background-color: yellow;
+}
