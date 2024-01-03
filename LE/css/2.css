@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia";
+  color: wheat;
+  letter-spacing: 2px;
+}
+
+body {
+  margin: 0px;
+  background-image: url("background2.gif");
+  background-size: cover;
+  font-family: "Georgia";
+}
+
+.header {
+  padding: 20px;
+  background-color: rgba(255, 68, 0, 0.76);
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 10px;
+}
+
+.header > h1 {
+  display: inline-block;
+}
+
+.header > a {
+  font-size: 1.25em;
+  text-align: center;
+  text-decoration: none;
+  color: wheat;
+  text-shadow: 2px -2px #000000;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body > div.row > div.col-s-3.menu {
+  padding: 20px;
+  border-radius: 0px 2px 2px 0px;
+  background-color: rgba(187, 0, 0, 0.603);
+}
+
+.menu > h2,
+h3 {
+  font-size: 1.35em;
+  text-shadow: 2px -2px #000000;
+}
+.menu > ul {
+  padding: 0px;
+}
+
+.menu > ul > a {
+  letter-spacing: 2px;
+}
+
+.menu > ul > a > li,
+button {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.1em;
+  background-color: orangered;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-weight: bold;
+}
+button {
+  padding: 10px;
+}
+
+.menu > ul > a > li:hover {
+  background-color: red;
+  font-weight: bold;
+}
+
+h3 {
+  padding: 20px 15px 0px 15px;
+}
+
+.content-inner {
+  font-size: 1.05em;
+  margin: 0px 10px;
+  background-color: rgba(97, 97, 97, 0.377);
+  border-radius: 3px;
+}
+
+body > div.row > div.col-7.col-s-8.content {
+  padding: 0px;
+}
+
+.content {
+  padding: 0;
+  margin: 0;
+}
+
+.content p {
+  text-align: left;
+  padding: 10px 20px;
+}
+.content p:not(:last-child) {
+  border-bottom: 8px dashed red;
+}
+
+.content h2 {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  text-shadow: 2px -2px #000000;
+}
+
+.content img {
+  width: 100%;
+}
+
+.aside {
+  background-color: rgba(161, 2, 2, 0.507);
+  border-radius: 2px 0px 0px 2px;
+}
+
+.aside img {
+  width: 100%;
+  padding: 5px;
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.87);
+  padding: 10px 0px;
+  margin-top: 10px;
+  font-size: 1em;
+  border-radius: 2px 2px 0px 0px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  .header,
+  .footer {
+    margin: 0;
+  }
+
+  body > div.row > div.col-s-3.menu:not(last-child),
+  body > div.row > div.col-2.col-s-12.aside:not(last-child),
+  body > div.row > div.col-7.col-s-8.content > div:not(last-child),
+  body > div.row > div.col-3.col-s-12.aside:not(last-child) {
+    border-radius: 2px;
+    margin: 5px 0px;
+    width: 100%;
+  }
+
+  [class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+
+  .col-s-2 {
+    width: 16.66%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-4 {
+    width: 33.33%;
+  }
+
+  .col-s-5 {
+    width: 41.66%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-7 {
+    width: 58.33%;
+  }
+
+  .col-s-8 {
+    width: 66.66%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-10 {
+    width: 83.33%;
+  }
+
+  .col-s-11 {
+    width: 91.66%;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 25%;
+  }
+
+  .col-3 {
+    width: 16.66%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
