@@ -38,6 +38,38 @@ switch ($action) {
         $controller = new \App\Controller\PostController();
         $view = $controller->deleteAction($_REQUEST['id'], $router);
         break;
+
+    case 'student-index':
+    case null:
+        $controller = new \App\Controller\StudentController();
+        $view = $controller->indexAction($templating, $router);
+        break;
+    case 'student-create':
+        $controller = new \App\Controller\StudentController();
+        $view = $controller->createAction($_REQUEST['post'] ?? null, $templating, $router);
+        break;
+    case 'student-edit':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\StudentController();
+        $view = $controller->editAction($_REQUEST['id'], $_REQUEST['student'] ?? null, $templating, $router);
+        break;
+    case 'student-show':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\StudentController();
+        $view = $controller->showAction($_REQUEST['id'], $templating, $router);
+        break;
+    case 'student-delete':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\StudentController();
+        $view = $controller->deleteAction($_REQUEST['id'], $router);
+        break;
+
     case 'info':
         $controller = new \App\Controller\InfoController();
         $view = $controller->infoAction();
